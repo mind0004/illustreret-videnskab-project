@@ -1,0 +1,27 @@
+{
+  "name": "illustreret-vdenskab",
+  "version": "1.0.0",
+  "description": "Prototype website for iv",
+  "main": "index.js",
+  "scripts": {
+    "dev-sass": "node-sass src/styles/sass/style.scss src/styles/main.css -w",
+    "dev-server": "cd src && live-server --no-browser",
+    "dev": "npm run dev-sass | npm run dev-server",
+    "=============================": "====================================",
+    "build-sass": "node-sass src/styles/sass/main.scss src/styles/style.css",
+    "build-parcel": "parcel build src/index.html --public-url .",
+    "build": "npm run dist-clear && npm run build-sass && npm run build-parcel ",
+    "build-server": "cd dist && live-server --no-browser",
+    "dist-clear": "rm -r -f dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mind0004/illustreret-videnskab-project.git"
+  },
+  "author": "multiple",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mind0004/illustreret-videnskab-project/issues"
+  },
+  "homepage": "https://github.com/mind0004/illustreret-videnskab-project#readme"
+}
