@@ -1,0 +1,247 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+div {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
+h4 {
+  margin-top: 1.33em; }
+
+h5 {
+  font-size: 0.83em; }
+
+h6 {
+  font-size: 0.67em; }
+
+p {
+  margin-top: 10px; }
+
+@font-face {
+  font-family: "GT-Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Regular.woff") format("woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "GT-Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Medium.woff") format("woff");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "GT-Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Bold.woff") format("woff");
+  font-weight: bold; }
+
+body {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  color: #161616;
+  font-family: GT-Walsheim;
+  font-weight: 300; }
+
+main {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  height: 30px;
+  background: blue; }
+
+.steps {
+  height: 50px;
+  background: black;
+  width: 100%; }
+
+.green-button {
+  position: relative;
+  width: 100%;
+  min-height: 50px; }
+  .green-button div {
+    text-align: center;
+    background: #81d742;
+    display: inline-block;
+    border-radius: 5px;
+    min-width: 60vw;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    .green-button div p {
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+      margin: 10px 25px; }
+
+.option-box {
+  position: relative;
+  width: 90vw;
+  background: white;
+  border: 1px solid #dedede; }
+  .option-box .header {
+    background: #e9e8e8;
+    font-size: 30px;
+    width: 90vw; }
+    .option-box .header h3 {
+      padding: 5px 0px 5px 10px; }
+  .option-box .options .choice {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 10px; }
+    .option-box .options .choice .circle {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #dedede;
+      border-radius: 50%;
+      background: white;
+      grid-column: span 2; }
+    .option-box .options .choice .text {
+      grid-column: span 5;
+      /* Vertical center alignment */ }
+      .option-box .options .choice .text p {
+        margin-top: 0px;
+        font-weight: 500; }
+      .option-box .options .choice .text h3 {
+        margin-top: 5px;
+        font-weight: bold; }
+    .option-box .options .choice .extra {
+      grid-column: span 3;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      /* Vertical center alignment */
+      justify-content: center; }
+      .option-box .options .choice .extra p {
+        font-size: 12px;
+        margin-top: 0px;
+        color: #0d85d7; }

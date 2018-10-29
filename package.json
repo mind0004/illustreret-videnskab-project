@@ -8,7 +8,7 @@
     "dev-server": "cd src && live-server --no-browser",
     "dev": "npm run dev-sass | npm run dev-server",
     "=============================": "====================================",
-    "build-sass": "node-sass src/styles/sass/main.scss src/styles/style.css",
+    "build-sass": "node-sass src/styles/sass/style.scss src/styles/main.css",
     "build-parcel": "parcel build src/index.html --public-url .",
     "build": "npm run dist-clear && npm run build-sass && npm run build-parcel ",
     "build-server": "cd dist && live-server --no-browser",

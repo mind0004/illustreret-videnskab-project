@@ -1,3 +1,13 @@
+//Import general
+@import "modules/css-reset";
 @import "modules/colours";
+@import "modules/init";
+@import "modules/global";
+
+//Import pages
 @import "modules/index";
-@import "modules/extras";
+@import "modules/details";
+@import "modules/card";
+
+//Import emergency
+@import "modules/trump";

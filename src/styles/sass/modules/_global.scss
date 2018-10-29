@@ -1,0 +1,90 @@
+$main_width: 90vw; //max available width for all elements inside <main>
+
+//Steps circle shown in the top
+.steps {
+  height: 50px;
+  background: black;
+  width: 100%;
+}
+
+//Use for green buttons
+.green-button {
+  position: relative;
+  width: 100%;
+  min-height: 50px;
+  div {
+    text-align: center;
+    background: $green;
+    display: inline-block;
+    border-radius: 5px;
+    min-width: 60vw;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    p {
+      color: white;
+      font-size: 30px;
+      font-weight: 500;
+      margin: 10px 25px;
+    }
+  }
+}
+
+//Option box
+.option-box {
+  position: relative;
+  width: $main_width;
+  background: white;
+  border: 1px solid $border_grey;
+  .header {
+    background: $header_grey;
+    font-size: 30px;
+    width: $main_width;
+    h3 {
+      padding: 5px 0px 5px 10px;
+    }
+  }
+  .options {
+    .choice {
+      width: 90%;
+      margin: 30px auto;
+      display: grid;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-auto-rows: 1fr;
+      grid-gap: 10px;
+      .circle {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $border_grey;
+        border-radius: 50%;
+        background: white;
+        grid-column: span 2;
+      }
+      .text {
+        grid-column: span 5; /* Vertical center alignment */
+        p {
+          margin-top: 0px;
+          font-weight: 500;
+        }
+        h3 {
+          margin-top: 5px;
+          font-weight: bold;
+        }
+      }
+      .extra {
+        grid-column: span 3;
+        text-align: center;
+        display: flex;
+        align-items: center; /* Vertical center alignment */
+        justify-content: center;
+        p {
+          font-size: 12px;
+          margin-top: 0px;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
