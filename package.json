@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/mind0004/illustreret-videnskab-project/issues"
   },
-  "homepage": "https://github.com/mind0004/illustreret-videnskab-project#readme"
+  "homepage": "https://github.com/mind0004/illustreret-videnskab-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
 }
