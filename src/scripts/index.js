@@ -2,7 +2,12 @@ console.log("Yo");
 
 const giftTemplate = document.querySelector("#gift-template").content;
 const giftsContainer = document.querySelector("#index .gifts");
+const modal = document.querySelector("#modal");
+const imgPath = "assets/img/gifts/";
+
+let giftsDOM;
 let giftsArray = [];
+let modalActive = false;
 
 init();
 
@@ -10,6 +15,71 @@ init();
 function init() {
   setupGiftsArray();
   displayGifts();
+  giftsContainer.addEventListener("click", handleGiftClick);
+  modal
+    .querySelector(".close-icon")
+    .addEventListener("click", toggleModalDetail);
+  modal
+    .querySelector(".close-button")
+    .addEventListener("click", toggleModalDetail);
+}
+
+function handleGiftClick(e) {
+  let id = "";
+  //Find "gift" classname inside path and get ID
+  e.path.forEach(elem => {
+    if (elem.className === "gift") {
+      id = elem.dataset.id;
+    }
+  });
+
+  //Check if detail has been clicked or gift has been selected
+  if (e.target.className === "detail") {
+    //open modal
+    console.log("show");
+    const details = giftsArray.filter(getIdDetails);
+    updateModalDetail(details);
+    toggleModalDetail();
+  } else if (id != "") {
+    //Select gift
+    console.log(id);
+    giftsDOM.forEach(gift => {
+      gift.classList.remove("selected-gift");
+    });
+    document
+      .querySelectorAll(`[data-id='${id}']`)[0]
+      .classList.add("selected-gift");
+  }
+
+  //Get title and
+  function getIdDetails(obj) {
+    if (obj.id === id) {
+      return {
+        title: obj.title,
+        description: obj.description,
+        img: obj.img
+      };
+    } else {
+      return false;
+    }
+  }
+}
+
+function toggleModalDetail() {
+  if (modalActive) {
+    //Close
+    modal.style.removeProperty("top");
+  } else {
+    modal.style.top = "0px";
+  }
+  modalActive = !modalActive;
+}
+
+function updateModalDetail(detailObj) {
+  console.log(detailObj);
+  modal.querySelector("h3").textContent = detailObj[0].title;
+  modal.querySelector(".description").textContent = detailObj[0].description;
+  modal.querySelector("img").setAttribute("src", imgPath + detailObj[0].img);
 }
 
 //Populate the array
@@ -84,8 +154,6 @@ function setupGiftsArray() {
 
 //Display the gifts
 function displayGifts() {
-  const imgPath = "assets/img/gifts/";
-
   giftsArray.forEach(gift => {
     let clone = giftTemplate.cloneNode(true);
     clone.firstElementChild.dataset.id = gift.id;
@@ -94,6 +162,8 @@ function displayGifts() {
     clone.querySelector(".reg-price p").textContent = gift.old_price + " kr.";
     giftsContainer.appendChild(clone);
   });
+
+  giftsDOM = document.querySelectorAll(".gift");
 }
 
 //Create ID by UUID standards
