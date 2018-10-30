@@ -87,12 +87,14 @@
   .gifts {
     margin-top: 30px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr; /* keeps all grid boxes same height, else remove */
-    grid-gap: 10px;
+    grid-gap: 40px;
+    grid-row-gap: 0px;
     .gift {
-      grid-column: span 3;
+      grid-column: span 1;
       position: relative;
+      margin: 20px 0px;
     }
     .checkbox {
       height: 17px;
@@ -107,6 +109,7 @@
       display: flex;
       align-items: center; /* Vertical center alignment */
       justify-content: center;
+      min-height: 80px;
       img {
         width: 60%;
       }
@@ -114,17 +117,50 @@
     h4 {
       margin-top: 20px;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: bold;
+      min-height: 28px;
     }
     .bottom {
       width: 100%;
       position: relative;
+      margin-top: 10px;
+      bottom: 0px;
       .detail {
-        width: 50px;
-        font-size: 14px;
+        width: 42px;
+        font-size: 12px;
         color: $blue;
-        border: 1.5px solid $blue;
-        padding: 4px 5px;
+        border: 1.1px solid $blue;
+        padding: 2px 5px;
+        float: left;
+        margin-top: 20px;
+      }
+      .right {
+        float: right;
+        .reg-price {
+          position: relative;
+          width: 54px;
+          span {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 80%;
+            height: 2px;
+            background: #757575;
+            opacity: 0.6;
+            transform: rotate(15deg);
+            margin-left: 5px;
+            margin-top: 4px;
+          }
+          p {
+            margin-top: 0px;
+            font-size: 12px;
+          }
+        }
+        .gratis {
+          font-weight: 500;
+          color: $green;
+        }
       }
     }
   }
