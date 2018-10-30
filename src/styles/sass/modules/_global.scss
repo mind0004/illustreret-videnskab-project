@@ -1,5 +1,15 @@
 $main_width: 90vw; //max available width for all elements inside <main>
 
+strong {
+  font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 //Steps circle shown in the top
 .steps {
   height: 50px;
