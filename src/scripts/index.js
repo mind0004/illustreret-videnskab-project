@@ -3,11 +3,19 @@ console.log("Yo");
 const giftTemplate = document.querySelector("#gift-template").content;
 const giftsContainer = document.querySelector("#index .gifts");
 const modal = document.querySelector("#modal");
+const optionBox = document.querySelectorAll(".option-box");
 const imgPath = "assets/img/gifts/";
+const previewSlideButton = document.querySelectorAll("#preview .slide-button");
+const previewCloseButton = document.querySelector("#preview .close-button");
+const previewOpenButton = document.querySelector(".preview-open-button");
+const previewWrapper = document.querySelector("#preview .wrapper");
+const preview = document.querySelector("#preview");
 
 let giftsDOM;
 let giftsArray = [];
 let modalActive = false;
+let previewSlidePos = 0;
+let previewActive = false;
 
 init();
 
@@ -22,6 +30,50 @@ function init() {
   modal
     .querySelector(".close-button")
     .addEventListener("click", toggleModalDetail);
+
+  optionBox.forEach(box => {
+    box.addEventListener("click", handleOptionBoxClick);
+  });
+
+  previewSlideButton.forEach(btn => {
+    btn.addEventListener("click", slidePreview);
+  });
+
+  previewCloseButton.addEventListener("click", togglePreview);
+  previewOpenButton.addEventListener("click", togglePreview);
+}
+
+function togglePreview() {
+  if (previewActive) {
+    //Close
+    preview.style.removeProperty("top");
+  } else {
+    //open
+    preview.style.top = "0vh";
+  }
+
+  previewActive = !previewActive;
+}
+
+function slidePreview() {
+  previewSlidePos = {
+    left: () => {
+      return previewSlidePos < 0 ? (previewSlidePos += 100) : 0;
+    },
+    right: () => {
+      return previewSlidePos > -300 ? (previewSlidePos -= 100) : -300;
+    }
+  }[this.dataset.dir]();
+  console.log(moveTo);
+
+  previewWrapper.style.left = previewSlidePos + "vw";
+}
+
+function handleOptionBoxClick(e) {
+  optionBox.forEach(box => {
+    box.classList.remove("selected-option");
+  });
+  this.classList.add("selected-option");
 }
 
 function handleGiftClick(e) {
