@@ -1,0 +1,145 @@
+#card {
+  background-color: $background_grey;
+}
+
+#stepcounter {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  p {
+    color: $black;
+  }
+}
+
+#step1,
+#step2,
+#step3 {
+  border-radius: 50% 50% 50% 50%;
+  background: #0d85d7;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 300%;
+}
+
+#line1,
+#line2 {
+  text-align: center;
+}
+
+#betalingsmetode {
+  font-family: "GT-Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Regular.woff") format("woff");
+  font-weight: 300;
+
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#payment {
+  max-width: 90%;
+  margin: 0 auto;
+
+  #paymentimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10%;
+    max-width: 85%;
+  }
+}
+
+.option-box {
+  margin: 0 auto;
+}
+
+.ordrebillede img {
+  max-width: 90%;
+}
+
+.option-box .options {
+  .choice {
+    font-size: 12px;
+    .ordrebillede {
+      grid-column-start: span 5;
+      grid-column-end: auto;
+    }
+
+    .text {
+      font-size: 10px;
+      grid-column-start: span 3;
+      grid-column-end: auto;
+      text-align: center;
+      display: flex;
+      align-items: center; /* Vertical center alignment */
+      justify-content: center;
+    }
+
+    .extra {
+      grid-column-start: span 2;
+      grid-column-end: auto;
+      align-items: flex-end;
+      justify-content: end;
+    }
+
+    .ordrebillede2 {
+      grid-column-start: span 5;
+      grid-column-end: auto;
+    }
+
+    .text2 {
+      font-size: 10px;
+      grid-column-start: span 2;
+      grid-column-end: auto;
+      text-align: center;
+      display: flex;
+      align-items: center; /* Vertical center alignment */
+      justify-content: center;
+    }
+  }
+}
+
+.options {
+  border-bottom: 1px solid black;
+}
+
+#betingelser img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  max-width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#betingelser2 img {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  width: 80%;
+  max-width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* #ordrecontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#ordre {
+  background-color: green;
+  color: green;
+
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+#postnord img {
+  width: 20%;
+  position: relative;
+} */

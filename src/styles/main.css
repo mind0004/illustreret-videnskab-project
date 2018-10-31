@@ -171,7 +171,8 @@ main {
   position: relative;
   width: 90vw;
   margin: 0 auto;
-  height: 30px; }
+  height: 30px;
+  background: blue; }
 
 .steps {
   height: 50px;
@@ -245,68 +246,118 @@ main {
         margin-top: 0px;
         color: #0d85d7; }
 
-#details {
-  background-color: lightgrey; }
+#card {
+  background-color: #f6f6f6; }
 
-input {
-  height: 28px; }
+#stepcounter {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto; }
+  #stepcounter p {
+    color: #161616; }
 
-.postNo {
-  width: 50px; }
+#step1,
+#step2,
+#step3 {
+  border-radius: 50% 50% 50% 50%;
+  background: #0d85d7;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  font-size: 300%; }
 
-.form {
-  font-size: 13px;
-  padding-left: 21px; }
+#line1,
+#line2 {
+  text-align: center; }
 
-.by {
-  width: 143px; }
+#betalingsmetode {
+  font-family: "GT-Walsheim";
+  src: url("../assets/fonts/GT-Walsheim-Regular.woff") format("woff");
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%; }
 
-.choiceText {
-  justify-content: center;
-  align-items: center;
-  background-color: darkgrey;
-  max-width: 100%; }
+#payment {
+  max-width: 90%;
+  margin: 0 auto; }
+  #payment #paymentimg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 10%;
+    max-width: 85%; }
 
-.choiceFrame {
-  justify-content: center;
-  align-items: center;
-  background-color: lightgrey;
-  max-width: 100%;
-  border-bottom: 10px solid lightgrey; }
+.option-box {
+  margin: 0 auto; }
 
-.shipping {
-  background-color: white;
-  position: relative; }
+.ordrebillede img {
+  max-width: 90%; }
 
-.image {
-  display: inline-block; }
+.option-box .options .choice {
+  font-size: 12px; }
+  .option-box .options .choice .ordrebillede {
+    grid-column-start: span 5;
+    grid-column-end: auto; }
+  .option-box .options .choice .text {
+    font-size: 10px;
+    grid-column-start: span 3;
+    grid-column-end: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* Vertical center alignment */
+    justify-content: center; }
+  .option-box .options .choice .extra {
+    grid-column-start: span 2;
+    grid-column-end: auto;
+    align-items: flex-end;
+    justify-content: end; }
+  .option-box .options .choice .ordrebillede2 {
+    grid-column-start: span 5;
+    grid-column-end: auto; }
+  .option-box .options .choice .text2 {
+    font-size: 10px;
+    grid-column-start: span 2;
+    grid-column-end: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* Vertical center alignment */
+    justify-content: center; }
 
-.thick {
-  width: 60%;
-  padding: 18px; }
+.options {
+  border-bottom: 1px solid black; }
 
-.packets {
-  width: 62%; }
+#betingelser img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
-.logo {
-  display: inline-block; }
+#betingelser2 img {
+  margin-top: 20%;
+  margin-bottom: 10%;
+  width: 80%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
-.paketBox {
-  margin-top: -20px; }
-
-.bold {
-  font-weight: bold;
-  font-size: 30px; }
-
-img {
-  width: 65%; }
-
-button {
-  width: 92%;
-  height: 50px;
-  background-color: #8fd88f;
-  position: absolute;
-  left: 4%;
-  top: 3300%;
-  color: white;
-  font-size: 25px; }
+/* #ordrecontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#ordre {
+  background-color: green;
+  color: green;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+#postnord img {
+  width: 20%;
+  position: relative;
+} */
