@@ -80,16 +80,19 @@ function handleGiftClick(e) {
   let id = "";
   //Find "gift" classname inside path and get ID
   e.path.forEach(elem => {
-    if (elem.className === "gift") {
+    if (elem.className === "gift" || elem.className === "gift selected-gift") {
       id = elem.dataset.id;
     }
   });
+
+  console.log(e);
 
   //Check if detail has been clicked or gift has been selected
   if (e.target.className === "detail") {
     //open modal
     console.log("show");
     const details = giftsArray.filter(getIdDetails);
+    console.log(details);
     updateModalDetail(details);
     toggleModalDetail();
   } else if (id != "") {
