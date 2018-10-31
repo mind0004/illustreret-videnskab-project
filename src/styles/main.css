@@ -171,8 +171,7 @@ main {
   position: relative;
   width: 90vw;
   margin: 0 auto;
-  height: 30px;
-  background: blue; }
+  height: 30px; }
 
 .steps {
   height: 50px;
@@ -246,6 +245,104 @@ main {
         margin-top: 0px;
         color: #0d85d7; }
 
+#details {
+  background-color: #f6f6f6; }
+
+.stepps {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%; }
+
+input {
+  height: 28px;
+  border: 0;
+  font-size: 12px;
+  padding-left: 10px; }
+
+.kunde {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10%; }
+
+label {
+  width: 87px;
+  display: inline-block;
+  font-family: "GT-Walsheim"; }
+
+.bottomShipping {
+  padding-bottom: 24px; }
+
+.postNo {
+  width: 50px; }
+
+.form {
+  font-size: 13px;
+  padding-left: 11%;
+  box-sizing: border-box; }
+
+.by {
+  width: 84px; }
+
+.star {
+  color: red; }
+
+.choiceText {
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e8e8;
+  max-width: 100%; }
+
+.choiceFrame {
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding-bottom: 33px; }
+
+.shipping {
+  background-color: white;
+  position: relative; }
+
+.image {
+  display: inline-block; }
+
+.thick {
+  width: 60%;
+  padding: 18px; }
+
+.packets {
+  width: 62%; }
+
+.logo {
+  display: inline-block; }
+
+.paketBox {
+  margin-top: -20px;
+  font-weight: bold; }
+
+.bold {
+  font-weight: bold;
+  font-size: 30px; }
+
+img {
+  width: 65%; }
+
+button {
+  width: 92%;
+  height: 50px;
+  background-color: #81d742;
+  position: absolute;
+  left: 4%;
+  color: white;
+  font-size: 25px;
+  font-family: "GT-Walsheim";
+  border: 0px; }
+
+h3 {
+  font-size: 1.4em;
+  padding-left: 8px;
+  padding-top: 6px; }
+
 #card {
   background-color: #f6f6f6; }
 
@@ -260,7 +357,6 @@ main {
 #step2,
 #step3 {
   border-radius: 50% 50% 50% 50%;
-  background: #0d85d7;
   width: 150px;
   height: 150px;
   text-align: center;

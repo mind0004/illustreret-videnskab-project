@@ -10,42 +10,43 @@
 </head>
 
 <body id="details">
-    <div class="steps">
-    </div>
+    
+        <img class="stepps" src="./assets/images/steps.png" alt="step">
+    
     <main>
         <div class="mainFrame">
-            <h1> Kundeoplysninger </h1>
+            <h1 class="kunde"> Kundeoplysninger </h1>
             <br>
             <br>
             <br>
             <div class="form">
                 <div>
-                    <label for="text"> Fornavn*:</label>
+                    <label for="text"> Fornavn<span class="star"> *</span></label>
                     <input type="text" name="firstname" placeholder="Dit fornavn"><br><br>
                 </div>
                 <div>
-                    <label for="text"> Efternavn*:</label>
+                    <label for="text"> Efternavn<span class="star"> *</span></label>
                     <input type="text" name="lastname" placeholder="Dit Efternavn"><br><br>
                 </div>
                 <div>
-                    <label for="text"> Adresse*:</label>
+                    <label for="text"> Adresse<span class="star"> *</span></label>
                     <input type="text" name="Adresse" placeholder="Din adresse"><br><br>
                 </div>
                 <div>
-                    <label for="text"> Postnr.&By*:*:</label>
+                    <label for="text"> Postnr.&By<span class="star"> *</span></label>
                     <input class="postNo" type="text" name="postNo" placeholder="Postnr.">
                     <input class="by" type="text" name="By" placeholder="By"><br><br>
                 </div>
                 <div>
-                    <label for="text"> E-mail*:</label>
+                    <label for="text"> E-mail<span class="star"> *</span></label>
                     <input type="text" name="email" placeholder="Din e-mailadresse"><br><br>
                 </div>
                 <div>
-                    <label for="text"> Bekraeft e-m...:</label>
+                    <label for="text"> Bekraeft e-m...</label>
                     <input type="text" name="Bekraeft" placeholder="Bekraeft din e-mail"><br><br>
                 </div>
                 <div>
-                    <label for="text"> Telefonnr.:</label>
+                    <label for="text"> Telefonnr.</label>
                     <input type="text" name="Telefonnr" placeholder="Dit telefonnumer"><br><br>
                 </div>
             </div>
@@ -73,12 +74,12 @@
                     <img onclick="changeImage(id)" id="tick2" class="thick" src="./assets/images/tick.png" alt="makarena">
                 </div>
                 <div class="logo packets">
-                    <img src="./assets/images/postnord.png" alt="logo">
-                    <p class="paketBox">Hjemmelevering</p>
+                    <img src="./assets/images/postnord.png" alt="logo2">
+                    <p class="paketBox"><b>Hjemmelevering</b></p>
                     <p class="bold">+ 39,50 dkk</p>
                 </div>
             </div>
-            <div class="shipping">
+            <div class="shipping bottomShipping">
                 <div class="image">
                     <img onclick="changeImage(id)" id="tick3" class="thick" src="./assets/images/tick.png" alt="makarena">
                 </div>
@@ -91,7 +92,7 @@
         </div>
 
         <div class="mainFrame">
-            <button type="button">Ga til betaling</button>
+            <button type="button">Gå til betaling</button>
         </div>
 
     </main>

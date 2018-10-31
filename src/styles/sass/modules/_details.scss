@@ -1,15 +1,36 @@
-$flexboxgrid-grid-columns: 12;   
-
-
 #details {
-background-color: lightgrey;
+background-color: $background_grey;
 }
 
-main{
+
+.stepps{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 input{
     height: 28px;
+    border: 0;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.kunde{
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10%;
+}
+
+label{
+    width: 87px;
+    display: inline-block;
+    font-family: "GT-Walsheim";
+}
+
+.bottomShipping{
+    padding-bottom: 24px;
 }
 
 
@@ -19,29 +40,31 @@ input{
 
 .form{
     font-size: 13px;
-    padding-left: 21px;
+    padding-left: 11%;
+    box-sizing: border-box;
 }
 
 .by{
-    width: 143px;
+    width: 84px;
 }
 
-.mainFrame{
+.star{
+    color: red;
 }
+
 
 .choiceText{
     justify-content: center;
     align-items: center;
-    background-color: darkgrey;
+    background-color: #e9e8e8;
     max-width: 100%;
 }
 
 .choiceFrame{
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
     max-width: 100%;
-    border-bottom: 10px solid lightgrey;
+    padding-bottom: 33px;
 }
 
 .shipping{
@@ -68,6 +91,7 @@ input{
 
 .paketBox{
     margin-top: -20px;
+    font-weight: bold;
 }
 
 .bold{
@@ -82,16 +106,20 @@ img{
 button{
     width: 92%;
     height: 50px;
-    background-color: rgb(143, 216, 143);
+    background-color: #81d742;
     position: absolute;
     left: 4%;
-    top:3300%;
     color: white;
     font-size: 25px;
+    font-family: "GT-Walsheim";
+    border: 0px;
 }
 
-// h3{
-// }
+ h3{
+    font-size: 1.4em;
+    padding-left: 8px;
+    padding-top: 6px;
+}
 
 // h1 {
 //     border-bottom: 10px;
