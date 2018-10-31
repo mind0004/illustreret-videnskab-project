@@ -1,2 +1,99 @@
+$flexboxgrid-grid-columns: 12;   
+
+
 #details {
+background-color: lightgrey;
 }
+
+main{
+}
+
+input{
+    height: 28px;
+}
+
+
+.postNo{
+    width: 50px;
+}
+
+.form{
+    font-size: 13px;
+    padding-left: 21px;
+}
+
+.by{
+    width: 143px;
+}
+
+.mainFrame{
+}
+
+.choiceText{
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    max-width: 100%;
+}
+
+.choiceFrame{
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    max-width: 100%;
+    border-bottom: 10px solid lightgrey;
+}
+
+.shipping{
+    background-color: white;
+    position: relative;
+}
+
+.image{
+    display: inline-block;
+}
+
+.thick{
+    width: 60%;
+    padding: 18px;
+}
+
+.packets{
+    width: 62%;
+}
+
+.logo{
+    display: inline-block
+}
+
+.paketBox{
+    margin-top: -20px;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+img{
+    width:65%;
+}
+
+button{
+    width: 92%;
+    height: 50px;
+    background-color: rgb(143, 216, 143);
+    position: absolute;
+    left: 4%;
+    top:3300%;
+    color: white;
+    font-size: 25px;
+}
+
+// h3{
+// }
+
+// h1 {
+//     border-bottom: 10px;
+// }
+

@@ -11,12 +11,91 @@
 
 <body id="details">
     <div class="steps">
-
     </div>
     <main>
+        <div class="mainFrame">
+            <h1> Kundeoplysninger </h1>
+            <br>
+            <br>
+            <br>
+            <div class="form">
+                <div>
+                    <label for="text"> Fornavn*:</label>
+                    <input type="text" name="firstname" placeholder="Dit fornavn"><br><br>
+                </div>
+                <div>
+                    <label for="text"> Efternavn*:</label>
+                    <input type="text" name="lastname" placeholder="Dit Efternavn"><br><br>
+                </div>
+                <div>
+                    <label for="text"> Adresse*:</label>
+                    <input type="text" name="Adresse" placeholder="Din adresse"><br><br>
+                </div>
+                <div>
+                    <label for="text"> Postnr.&By*:*:</label>
+                    <input class="postNo" type="text" name="postNo" placeholder="Postnr.">
+                    <input class="by" type="text" name="By" placeholder="By"><br><br>
+                </div>
+                <div>
+                    <label for="text"> E-mail*:</label>
+                    <input type="text" name="email" placeholder="Din e-mailadresse"><br><br>
+                </div>
+                <div>
+                    <label for="text"> Bekraeft e-m...:</label>
+                    <input type="text" name="Bekraeft" placeholder="Bekraeft din e-mail"><br><br>
+                </div>
+                <div>
+                    <label for="text"> Telefonnr.:</label>
+                    <input type="text" name="Telefonnr" placeholder="Dit telefonnumer"><br><br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="choiceText">
+            <h3>Fragt</h3>
+            <br>
+        </div>
+        <div class="choiceFrame">
+            <div class="shipping">
+                <div class="image">
+                    <img onclick="changeImage(id)" id="tick1" class="thick" src="./assets/images/tick.png" alt="makarena">
+                </div>
+                <div class="logo">
+                    <img src="./assets/images/swip.png" alt="logo">
+                    <p class="paketBox">Pakkebox afhenting</p>
+                    <p class="bold">+ 0,00 dkk</p>
+                </div>
+            </div>
+            <div class="shipping">
+                <div class="image">
+                    <img onclick="changeImage(id)" id="tick2" class="thick" src="./assets/images/tick.png" alt="makarena">
+                </div>
+                <div class="logo packets">
+                    <img src="./assets/images/postnord.png" alt="logo">
+                    <p class="paketBox">Hjemmelevering</p>
+                    <p class="bold">+ 39,50 dkk</p>
+                </div>
+            </div>
+            <div class="shipping">
+                <div class="image">
+                    <img onclick="changeImage(id)" id="tick3" class="thick" src="./assets/images/tick.png" alt="makarena">
+                </div>
+                <div class="logo">
+                    <img src="./assets/images/gls.png" alt="logo">
+                    <p class="paketBox">Hjemmelevering</p>
+                    <p class="bold">+ 39,50 dkk</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mainFrame">
+            <button type="button">Ga til betaling</button>
+        </div>
 
     </main>
-    <script src="scripts/main.js" type="text/javascript"></script>
+    <script src="scripts/details.js" type="text/javascript"></script>
 </body>
 
 </html>

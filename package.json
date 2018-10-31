@@ -26,5 +26,8 @@
   "homepage": "https://github.com/mind0004/illustreret-videnskab-project#readme",
   "devDependencies": {
     "node-sass": "^4.9.4"
+  },
+  "dependencies": {
+    "flexboxgrid-sass": "^8.0.5"
   }
 }

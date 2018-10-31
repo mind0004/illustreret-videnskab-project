@@ -171,8 +171,7 @@ main {
   position: relative;
   width: 90vw;
   margin: 0 auto;
-  height: 30px;
-  background: blue; }
+  height: 30px; }
 
 .steps {
   height: 50px;
@@ -245,3 +244,69 @@ main {
         font-size: 12px;
         margin-top: 0px;
         color: #0d85d7; }
+
+#details {
+  background-color: lightgrey; }
+
+input {
+  height: 28px; }
+
+.postNo {
+  width: 50px; }
+
+.form {
+  font-size: 13px;
+  padding-left: 21px; }
+
+.by {
+  width: 143px; }
+
+.choiceText {
+  justify-content: center;
+  align-items: center;
+  background-color: darkgrey;
+  max-width: 100%; }
+
+.choiceFrame {
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  max-width: 100%;
+  border-bottom: 10px solid lightgrey; }
+
+.shipping {
+  background-color: white;
+  position: relative; }
+
+.image {
+  display: inline-block; }
+
+.thick {
+  width: 60%;
+  padding: 18px; }
+
+.packets {
+  width: 62%; }
+
+.logo {
+  display: inline-block; }
+
+.paketBox {
+  margin-top: -20px; }
+
+.bold {
+  font-weight: bold;
+  font-size: 30px; }
+
+img {
+  width: 65%; }
+
+button {
+  width: 92%;
+  height: 50px;
+  background-color: #8fd88f;
+  position: absolute;
+  left: 4%;
+  top: 3300%;
+  color: white;
+  font-size: 25px; }
