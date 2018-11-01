@@ -9,11 +9,56 @@
     <title>Document</title>
 </head>
 
-<body id="landing">
+<body id="index">
+    <header>
+        <div id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="Illustreret Videnskab Logo">
+        </div>
+    </header>
     <main>
+        <div class="index-top">
+            <img src="assets/img/index-top.png">
+        </div>
 
-        <!-- Option box -->
-        <div class="option-box">
+        <!-- Hero -->
+        <div class="hero">
+            <div class="images">
+                <img src="assets/img/2-mags.png" alt="Illustreret Videnskab Magasin">
+                <img src="assets/img/gift.svg" alt="gift icon">
+            </div>
+            <p class="preview-open-button">Indblik i de første sider</p>
+            <div class="titel clearfix">
+                <h1>Test Abo</h1>
+                <h1>69,50 kr.</h1>
+            </div>
+            <div class="description">
+                <h2>2 magasin + <strong>gratis gave</strong></h2>
+                <p>34.70 kr. per magasin</p>
+            </div>
+        </div>
+
+        <!-- Gift selection -->
+        <div class="section-title">
+            <h2>Vælg en gave</h2>
+            <span></span>
+        </div>
+        <div class="gifts">
+            <!-- insert gift templates -->
+        </div>
+
+
+        <!-- Abo selection -->
+        <div class="section-title">
+            <h2>Abotype</h2>
+            <span></span>
+        </div>
+
+        <div class="option-box selected-option">
             <div class="header">
                 <h3>Test Abo</h3>
             </div>
@@ -21,6 +66,8 @@
             <div class="options">
                 <div class="choice">
                     <div class="circle">
+                        <span></span>
+                        <span></span>
                     </div>
                     <div class="text">
                         <p>2 magasiner<br>
@@ -35,13 +82,147 @@
             </div>
         </div>
 
-        <div class="green-button">
-            <div>
-                <p>Bestil nu</p>
+        <div class="option-box">
+            <div class="header">
+                <h3>6 Magasiner</h3>
+            </div>
+            <!-- Options -->
+            <div class="options">
+                <div class="choice">
+                    <div class="circle">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="text">
+                        <p>6 magasiner<br>
+                            + gave</p>
+                        <h3>169,50 kr.</h3>
+                    </div>
+                    <div class="extra">
+                        <p>28,10kr<br>
+                            per magasin</p>
+                    </div>
+                </div>
             </div>
         </div>
 
+        <div class="option-box">
+            <div class="header">
+                <h3>Test Abo</h3>
+            </div>
+            <!-- Options -->
+            <div class="options">
+                <div class="choice">
+                    <div class="circle">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="text">
+                        <p>12 magasiner<br>
+                            + gave</p>
+                        <h3>299,50 kr.</h3>
+                    </div>
+                    <div class="extra">
+                        <p>24,90kr<br>
+                            per magasin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="green-button">
+            <a href="details.html">
+                <div>
+                    <p>Bestil nu</p>
+                </div>
+            </a>
+        </div>
+
+
+        <p class="green-button-desc">Du betaler kun en gang for alle magasiner.</p>
+
+        <!-- Support -->
+        <div class="support">
+            <h2>Vi hjælper meget gerne</h2>
+            <a href="tel:004539103018">(+ 45) 39 10 30 18</a>
+            <p>Man-Tors fra 9.00 - 16.00</p>
+            <p>Fredag fra 9.00 - 14.30</p>
+        </div>
+
+        <footer>
+            <h3>Bonnier Publications International A/S</h3>
+            <p>Kundeservice postboks 413 <br>
+                0900 København C<br>
+                CVR. 977041066</p>
+            <h3>Om Illustreret Videnskab</h3>
+            <p>Bliv underholdt og udfordret, og forstå den verden, som omgiver dig. Tag med på opdagelsesrejse – fra
+                Jordens dybeste kløft til universets yderste grænser. Glæd dig til seneste nyt fra forskernes
+                frontlinje og spændende beretninger om nye teknologiske gennembrud. Altid forsynet med en videnskabelig
+                forklaring undervejs.</p>
+            <h3>Sikker betaling med</h3>
+            <img src="assets/img/payment-options.png" alt="betalings metode">
+        </footer>
     </main>
+
+
+    <div id="modal">
+        <div class="container">
+            <p class="close-icon clearfix">X</p>
+            <img src="assets/img/gifts/powerbank.png" alt="powerbank">
+            <h3>Powerbank</h3>
+            <p class="description">Den smarte Stone powerbank fylder ikke meget, hvilket gør den perfekt til at have
+                med i lommen når du
+                skal på stranden, til festival eller blot har brug for ekstra strøm i en travl hverdag.
+                Stone powerbank er udstyret med to strømudgange, hvor den ene udgang passer perfekt til at oplade din
+                iPhone og den anden passer til højtalere, tablets, kameraer eller lignende. For at benytte powerbanken
+                stikker du blot din enheds USB kabel ind i powerbanken, og efterfølgende tilslutter din enhed.
+            </p>
+            <p class="gratis clearfix">GRATIS</p>
+            <p class="close-button">Luk</p>
+        </div>
+    </div>
+
+    <div id="preview">
+        <div class="container">
+            <div class="wrapper">
+                <img src="assets/mag-preview/page-1.jpg">
+                <img src="assets/mag-preview/page-2.jpg">
+                <img src="assets/mag-preview/page-3.jpg">
+                <img src="assets/mag-preview/page-4.jpg" class="clearfix">
+            </div>
+
+            <div class="left slide-button clearfix" data-dir="left"><i class="arrow-left"></i></div>
+            <div class="right slide-button clearfix" data-dir="right"><i class="arrow-right"></i></div>
+            <p class="close-button">Luk</p>
+        </div>
+    </div>
+
+
+
+    <!--Templates-->
+    <template id="gift-template">
+        <div class="gift">
+            <div class="checkbox">
+
+            </div>
+            <div class="image">
+                <img src="assets/img/gifts/bag.png">
+            </div>
+            <h4>CFBR Windbreaker 2nd gen. jakke - HERRE</h4>
+            <div class="bottom">
+                <p data-id="1" class="detail">Detaljer</p>
+                <div class="right clearfix">
+                    <div class="reg-price">
+                        <p>856,90 kr.</p>
+                        <span></span>
+                    </div>
+                    <p class="gratis">GRATIS</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
     <script src="scripts/index.js" type="text/javascript"></script>
 </body>
 

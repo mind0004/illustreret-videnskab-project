@@ -1,5 +1,15 @@
 $main_width: 90vw; //max available width for all elements inside <main>
 
+strong {
+  font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 //Steps circle shown in the top
 .steps {
   height: 50px;
@@ -16,7 +26,7 @@ $main_width: 90vw; //max available width for all elements inside <main>
     text-align: center;
     background: $green;
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 3px;
     min-width: 60vw;
     margin: 0 auto;
     position: absolute;
@@ -37,12 +47,14 @@ $main_width: 90vw; //max available width for all elements inside <main>
   width: $main_width;
   background: white;
   border: 1px solid $border_grey;
+  margin-bottom: 20px;
   .header {
     background: $header_grey;
     font-size: 30px;
     width: $main_width;
     h3 {
       padding: 5px 0px 5px 10px;
+      font-size: 24px;
     }
   }
   .options {
@@ -61,6 +73,24 @@ $main_width: 90vw; //max available width for all elements inside <main>
         border-radius: 50%;
         background: white;
         grid-column: span 2;
+        position: relative;
+        span {
+          display: block;
+          position: absolute;
+          height: 4px;
+          width: 20px;
+          background: white;
+          top: 18px;
+          left: 14px;
+          transform: rotate(-55deg);
+          border-radius: 5px;
+        }
+        span:last-of-type {
+          width: 9px;
+          transform: rotate(45deg);
+          top: 22px;
+          left: 11px;
+        }
       }
       .text {
         grid-column: span 5; /* Vertical center alignment */
@@ -85,6 +115,17 @@ $main_width: 90vw; //max available width for all elements inside <main>
           color: $blue;
         }
       }
+    }
+  }
+
+  &.selected-option {
+    .options .choice .circle {
+      width: 40px;
+      height: 40px;
+      border: 1px solid $border_grey;
+      border-radius: 50%;
+      background: $blue;
+      grid-column: span 2;
     }
   }
 }
