@@ -1,17 +1,14 @@
-function changeImage(id) {
-    if(id == 'tick1'){
-        document.getElementById(id).src = './assets/images/untick.png'
-        document.getElementById('tick2').src = './assets/images/tick.png'
-        document.getElementById('tick3').src = './assets/images/tick.png'
-    }
-if(id == 'tick2'){
-    document.getElementById(id).src = './assets/images/untick.png'
-    document.getElementById('tick1').src = './assets/images/tick.png'
-    document.getElementById('tick3').src = './assets/images/tick.png'
-}
-if(id == 'tick3'){
-    document.getElementById(id).src = './assets/images/untick.png'
-    document.getElementById('tick1').src = './assets/images/tick.png'
-    document.getElementById('tick2').src = './assets/images/tick.png'
-}
+const choicesArray =document.querySelectorAll("#details .choice");
+
+console.log(choicesArray)
+
+choicesArray.forEach(choice=>{
+    choice.addEventListener("click",changeChoice);
+})
+
+function changeChoice(){
+choicesArray.forEach(choice=>{
+    choice.classList.remove("selected")
+})
+    this.classList.add("selected")
 }
