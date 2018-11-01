@@ -1,109 +1,104 @@
 #details {
-background-color: $background_grey;
-}
+  background-color: $background_grey;
 
-
-.stepps{
+  .stepps {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-}
+  }
 
-input{
+  input {
     height: 28px;
     border: 0;
     font-size: 12px;
     padding-left: 10px;
-}
+  }
 
-.kunde{
+  .kunde {
     font-weight: 300;
     text-align: center;
     margin-top: 10%;
-}
+  }
 
-label{
+  label {
     width: 87px;
     display: inline-block;
     font-family: "GT-Walsheim";
-}
+  }
 
-.bottomShipping{
+  .bottomShipping {
     padding-bottom: 24px;
-}
+  }
 
-
-.postNo{
+  .postNo {
     width: 50px;
-}
+  }
 
-.form{
+  .form {
     font-size: 13px;
-    padding-left: 11%;
     box-sizing: border-box;
-}
+  }
 
-.by{
+  .by {
     width: 84px;
-}
+  }
 
-.star{
+  .star {
     color: red;
-}
+  }
 
-
-.choiceText{
+  .choiceText {
     justify-content: center;
     align-items: center;
     background-color: #e9e8e8;
     max-width: 100%;
-}
+  }
 
-.choiceFrame{
+  .choiceFrame {
     justify-content: center;
     align-items: center;
     max-width: 100%;
     padding-bottom: 33px;
-}
+  }
 
-.shipping{
+  .shipping {
     background-color: white;
     position: relative;
-}
+  }
 
-.image{
+  .image {
     display: inline-block;
-}
+  }
 
-.thick{
+  .thick {
     width: 60%;
     padding: 18px;
-}
+  }
 
-.packets{
+  .packets {
     width: 62%;
-}
+  }
 
-.logo{
-    display: inline-block
-}
+  .logo {
+    display: inline-block;
+  }
 
-.paketBox{
+  .paketBox {
     margin-top: -20px;
     font-weight: bold;
-}
+  }
 
-.bold{
+  .bold {
     font-weight: bold;
     font-size: 30px;
-}
+  }
 
-img{
-    width:65%;
-}
+  img {
+    width: 65%;
+  }
 
-button{
+  button {
     width: 92%;
     height: 50px;
     background-color: #81d742;
@@ -113,14 +108,40 @@ button{
     font-size: 25px;
     font-family: "GT-Walsheim";
     border: 0px;
-}
+  }
+  .option-box .options .choice .text {
+    grid-column: span 7;
+    text-align: left;
+  }
+  .option-box .options .choice .text p {
+    margin: 10px 0px;
+  }
+  .option-box .options .choice {
+    text-align: center;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .option-box .options .choice .text h3 {
+    margin-top: 5px;
+    font-weight: bold;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .option-box.selected-option .options .choice .circle {
+    grid-column: span 3;
+  }
 
- h3{
-    font-size: 1.4em;
-    padding-left: 8px;
-    padding-top: 6px;
+  .choice.selected .circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid $border_grey;
+    border-radius: 50%;
+    background: $blue;
+    grid-column: span 2;
+  }
+  button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
-// h1 {
-//     border-bottom: 10px;
-// }
-
