@@ -1,6 +1,17 @@
 #card {
   background-color: $background_grey;
 
+  #step3 {
+    width: 100%;
+    border-radius: 50% 50% 50% 50%;
+    text-align: center;
+    margin-top: 5%;
+
+    #step3img {
+      width: 75%;
+    }
+  }
+
   #stepcounter {
     display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
@@ -10,7 +21,7 @@
     }
   }
 
-  #step1,
+  /*   #step1,
   #step2,
   #step3 {
     border-radius: 50% 50% 50% 50%;
@@ -18,7 +29,7 @@
     height: 150px;
     text-align: center;
     font-size: 300%;
-  }
+  } */
 
   #line1,
   #line2 {
@@ -36,7 +47,7 @@
   }
 
   #payment {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 
     #paymentimg {
@@ -44,7 +55,7 @@
       margin-right: auto;
       display: block;
       margin-bottom: 10%;
-      max-width: 85%;
+      width: 90%;
     }
   }
 
@@ -57,15 +68,21 @@
   }
 
   .option-box .options {
+    border-bottom: 1px solid rgb(26, 26, 26);
     .choice {
       font-size: 12px;
+      height: calc(20vh - 10px);
       .ordrebillede {
         grid-column-start: span 5;
         grid-column-end: auto;
+        //height: calc(30vw);
+        display: flex;
+        align-items: center; /* Vertical center alignment */
+        justify-content: center;
       }
 
       .text {
-        font-size: 10px;
+        font-size: 14px;
         grid-column-start: span 3;
         grid-column-end: auto;
         text-align: center;
@@ -82,31 +99,22 @@
       }
 
       .ordrebillede2 {
-        grid-column-start: span 5;
+        grid-column-start: span 6;
         grid-column-end: auto;
       }
 
       .text2 {
-        font-size: 10px;
-        grid-column-start: span 2;
-        grid-column-end: auto;
-        text-align: center;
-        display: flex;
-        align-items: center; /* Vertical center alignment */
-        justify-content: center;
+        font-size: 12px;
+        grid-column-start: span 4;
       }
     }
-  }
-
-  .options {
-    border-bottom: 1px solid black;
   }
 
   #betingelser img {
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
 
     margin-left: auto;
     margin-right: auto;
@@ -116,26 +124,11 @@
   #betingelser2 img {
     margin-top: 20%;
     margin-bottom: 10%;
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
 
     margin-left: auto;
     margin-right: auto;
     display: block;
   }
-
-  /* #ordrecontainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-#ordre {
-  background-color: green;
-  color: green;
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-#postnord img {
-  width: 20%;
-  position: relative;
-} */
 }
