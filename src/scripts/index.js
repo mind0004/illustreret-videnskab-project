@@ -1,5 +1,3 @@
-console.log("Yo");
-
 const giftTemplate = document.querySelector("#gift-template").content;
 const giftsContainer = document.querySelector("#index .gifts");
 const modal = document.querySelector("#modal");
@@ -43,6 +41,7 @@ function init() {
   previewOpenButton.addEventListener("click", togglePreview);
 }
 
+//Show/hide preview
 function togglePreview() {
   if (previewActive) {
     //Close
@@ -55,6 +54,7 @@ function togglePreview() {
   previewActive = !previewActive;
 }
 
+//Slide left or right on preview
 function slidePreview() {
   previewSlidePos = {
     left: () => {
@@ -76,6 +76,7 @@ function handleOptionBoxClick(e) {
   this.classList.add("selected-option");
 }
 
+//Change gift selection
 function handleGiftClick(e) {
   let id = "";
   //Find "gift" classname inside path and get ID
@@ -120,6 +121,7 @@ function handleGiftClick(e) {
   }
 }
 
+//Enable disable modal
 function toggleModalDetail() {
   if (modalActive) {
     //Close
@@ -130,6 +132,7 @@ function toggleModalDetail() {
   modalActive = !modalActive;
 }
 
+//update modal window details
 function updateModalDetail(detailObj) {
   console.log(detailObj);
   modal.querySelector("h3").textContent = detailObj[0].title;
@@ -238,13 +241,10 @@ function uuidv4() {
   return id;
 }
 
-var password = "frontend2018";
-
-(function promptPass() {
-  var psw = prompt("Illustret Videnskab 2018");
-
-  while (psw !== password) {
-    alert("Incorrect Password");
-    return promptPass();
-  }
-})();
+const mq = window.matchMedia("(max-width: 570px)");
+if (mq.matches) {
+  // window width is at less than 570px
+} else {
+  // window width is greater than 570px
+  alert("Hey, you trying to view a mobile app on desktop. Please switch");
+}
