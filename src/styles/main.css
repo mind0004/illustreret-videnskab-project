@@ -698,34 +698,28 @@ strong {
 
 #card {
   background-color: #f6f6f6;
-  /* #ordrecontainer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-#ordre {
-  background-color: green;
-  color: green;
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
-#postnord img {
-  width: 20%;
-  position: relative;
-} */ }
+  /*   #step1,
+  #step2,
+  #step3 {
+    border-radius: 50% 50% 50% 50%;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-size: 300%;
+  } */ }
+  #card #step3 {
+    width: 100%;
+    border-radius: 50% 50% 50% 50%;
+    text-align: center;
+    margin-top: 5%; }
+    #card #step3 #step3img {
+      width: 75%; }
   #card #stepcounter {
     display: inline-grid;
     grid-template-columns: repeat(5, 1fr);
     margin: 0 auto; }
     #card #stepcounter p {
       color: #161616; }
-  #card #step1,
-  #card #step2,
-  #card #step3 {
-    border-radius: 50% 50% 50% 50%;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    font-size: 300%; }
   #card #line1,
   #card #line2 {
     text-align: center; }
@@ -737,64 +731,63 @@ strong {
     margin-top: 10%;
     margin-bottom: 5%; }
   #card #payment {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto; }
     #card #payment #paymentimg {
       margin-left: auto;
       margin-right: auto;
       display: block;
       margin-bottom: 10%;
-      max-width: 85%; }
+      width: 90%; }
   #card .option-box {
     margin: 0 auto; }
   #card .ordrebillede img {
     max-width: 90%; }
-  #card .option-box .options .choice {
-    font-size: 12px; }
-    #card .option-box .options .choice .ordrebillede {
-      grid-column-start: span 5;
-      grid-column-end: auto; }
-    #card .option-box .options .choice .text {
-      font-size: 10px;
-      grid-column-start: span 3;
-      grid-column-end: auto;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      /* Vertical center alignment */
-      justify-content: center; }
-    #card .option-box .options .choice .extra {
-      grid-column-start: span 2;
-      grid-column-end: auto;
-      align-items: flex-end;
-      justify-content: end; }
-    #card .option-box .options .choice .ordrebillede2 {
-      grid-column-start: span 5;
-      grid-column-end: auto; }
-    #card .option-box .options .choice .text2 {
-      font-size: 10px;
-      grid-column-start: span 2;
-      grid-column-end: auto;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      /* Vertical center alignment */
-      justify-content: center; }
-  #card .options {
-    border-bottom: 1px solid black; }
+  #card .option-box .options {
+    border-bottom: 1px solid #1a1a1a; }
+    #card .option-box .options .choice {
+      font-size: 12px;
+      height: calc(20vh - 10px); }
+      #card .option-box .options .choice .ordrebillede {
+        grid-column-start: span 5;
+        grid-column-end: auto;
+        display: flex;
+        align-items: center;
+        /* Vertical center alignment */
+        justify-content: center; }
+      #card .option-box .options .choice .text {
+        font-size: 14px;
+        grid-column-start: span 3;
+        grid-column-end: auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        /* Vertical center alignment */
+        justify-content: center; }
+      #card .option-box .options .choice .extra {
+        grid-column-start: span 2;
+        grid-column-end: auto;
+        align-items: flex-end;
+        justify-content: end; }
+      #card .option-box .options .choice .ordrebillede2 {
+        grid-column-start: span 6;
+        grid-column-end: auto; }
+      #card .option-box .options .choice .text2 {
+        font-size: 12px;
+        grid-column-start: span 4; }
   #card #betingelser img {
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block; }
   #card #betingelser2 img {
     margin-top: 20%;
     margin-bottom: 10%;
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block; }
