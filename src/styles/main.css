@@ -697,16 +697,7 @@ strong {
     margin-bottom: 30px; }
 
 #card {
-  background-color: #f6f6f6;
-  /*   #step1,
-  #step2,
-  #step3 {
-    border-radius: 50% 50% 50% 50%;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    font-size: 300%;
-  } */ }
+  background-color: #f6f6f6; }
   #card #step3 {
     width: 100%;
     border-radius: 50% 50% 50% 50%;
@@ -734,6 +725,7 @@ strong {
     max-width: 100%;
     margin: 0 auto; }
     #card #payment #paymentimg {
+      margin-top: 10%;
       margin-left: auto;
       margin-right: auto;
       display: block;
