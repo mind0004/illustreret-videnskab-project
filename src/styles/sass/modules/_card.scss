@@ -71,11 +71,10 @@
     border-bottom: 1px solid rgb(26, 26, 26);
     .choice {
       font-size: 12px;
-      height: calc(20vh - 10px);
+      height: calc(28vh - 10px);
       .ordrebillede {
-        grid-column-start: span 5;
+        grid-column-start: span 4;
         grid-column-end: auto;
-        //height: calc(30vw);
         display: flex;
         align-items: center; /* Vertical center alignment */
         justify-content: center;

@@ -747,9 +747,9 @@ strong {
     border-bottom: 1px solid #1a1a1a; }
     #card .option-box .options .choice {
       font-size: 12px;
-      height: calc(20vh - 10px); }
+      height: calc(28vh - 10px); }
       #card .option-box .options .choice .ordrebillede {
-        grid-column-start: span 5;
+        grid-column-start: span 4;
         grid-column-end: auto;
         display: flex;
         align-items: center;
